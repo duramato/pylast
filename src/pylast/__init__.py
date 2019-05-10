@@ -150,7 +150,7 @@ SCROBBLE_MODE_SKIPPED = "S"
 DELAY_TIME = 0.2
 
 # Python >3.4 has sane defaults
-SSL_CONTEXT = ssl.create_default_context()
+SSL_CONTEXT = ssl._create_unverified_context()
 
 logger = logging.getLogger(__name__)
 logging.getLogger(__name__).addHandler(logging.NullHandler())
